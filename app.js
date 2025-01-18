@@ -96,10 +96,7 @@ const main = () => {
   });
 
   bot.on("end", () => {
-    bot.removeAllListeners();
-    bot = null;
-    forceStop = true;
-    setTimeout(main, 5000);
+    main();
   });
 };
 
